@@ -13,7 +13,7 @@ function Card(props) {
       <p> min temp: {props.maxTemp} </p>
       <p> max temp: {props.minTemp} </p>
       <p>
-        location: {props.longitutde} , {props.latitude}
+        location: {props.longitude} , {props.latitude}
       </p>
     </div>
   );
