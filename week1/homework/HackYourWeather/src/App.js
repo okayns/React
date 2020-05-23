@@ -11,7 +11,6 @@ function App() {
       </div>
       <div>
         {Cities.map((city) => {
-          console.log(city);
           return (
             <Card
               key={city.id}
@@ -21,7 +20,7 @@ function App() {
               weatherDesc={city.weather[0].description}
               maxTemp={city.main.temp_max}
               minTemp={city.main.temp_min}
-              longitutde={city.coord.lon}
+              longitude={city.coord.lon}
               latitude={city.coord.lat}
             />
           );
