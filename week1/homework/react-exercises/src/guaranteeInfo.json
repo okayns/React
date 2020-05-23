@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "img": "https://github.com/okayns/React/blob/week1-hw-enis/week1/assets/exercises/f-delivery.png?raw=true",
+    "title": "Free Shipping",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam justo libero, eu mattis ante ornare quis. Donec maximus nisi vitae sagittis iaculis."
+  },
+  {
+    "id": 2,
+    "img": "https://github.com/okayns/React/blob/week1-hw-enis/week1/assets/exercises/coin.png?raw=true",
+    "title": "%100 Money back",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam justo libero, eu mattis ante ornare quis. Donec maximus nisi vitae sagittis iaculis."
+  },
+  {
+    "id": 3,
+    "img": "https://github.com/okayns/React/blob/week1-hw-enis/week1/assets/exercises/chat.png?raw=true",
+    "title": "Online Support 24/7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam justo libero, eu mattis ante ornare quis. Donec maximus nisi vitae sagittis iaculis."
+  }
+]
