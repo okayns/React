@@ -1,0 +1,10 @@
+.doggos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.doggos img {
+  width: 200px;
+  height: 200px;
+  padding: 0.4rem;
+}
