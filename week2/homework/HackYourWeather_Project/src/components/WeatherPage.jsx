@@ -22,7 +22,7 @@ function Main() {
         if (resp.ok) {
           return resp.json();
         } else {
-          setError((prevValue) => {
+          setError(() => {
             return {
               value: true,
               desc: resp.statusText,
@@ -35,7 +35,7 @@ function Main() {
         if (result.id) {
           setWeatherData(result);
         } else {
-          setError((prevValue) => {
+          setError(() => {
             return {
               value: true,
               desc: result.message,
@@ -44,7 +44,7 @@ function Main() {
         }
       })
       .catch((err) => {
-        setError((prevValue) => {
+        setError(() => {
           return {
             value: true,
             desc: err.message,
