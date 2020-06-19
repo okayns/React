@@ -34,11 +34,13 @@ function Main() {
       })
       .then((result) => {
         if (result.id) {
-          const filteredCities = weatherData.filter(
-            // To deal with duplication city value...
-            (city) => city.id !== result.id
-          );
-          setweatherData([result, ...filteredCities]);
+          setweatherData(() => {
+            const filteredCities = weatherData.filter(
+              // To deal with duplication city value...
+              (city) => city.id !== result.id
+            );
+            return [result, ...filteredCities];
+          });
         } else {
           setError(() => {
             return {
@@ -56,7 +58,9 @@ function Main() {
           };
         });
       })
-      .finally(setLoading(false));
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   const handleSubmit = (event) => {
@@ -69,8 +73,9 @@ function Main() {
   };
 
   const handleDelete = (id) => {
-    const newList = weatherData.filter((city) => city.id !== id);
-    setweatherData(newList);
+    setweatherData((oldWeatherData) =>
+      oldWeatherData.filter((city) => city.id !== id)
+    );
   };
 
   return (
@@ -82,7 +87,7 @@ function Main() {
       />
       {isLoading && <p>Data is fetching...</p>}
       {error.value && (
-        <p style={{ fontSize: "1.4rem", marginTop: "2rem" }}>
+         <p className="error-title">
           Could not get data because of
           <em>
             {city} {error.desc}
