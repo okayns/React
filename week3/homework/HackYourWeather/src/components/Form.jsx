@@ -14,7 +14,7 @@ function Form(props) {
         <input
           type="submit"
           value="Search"
-          disabled={props.city.length === 0}
+          disabled={props.city.trim().length === 0}
         />
       </form>
     </div>
