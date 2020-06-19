@@ -41,9 +41,7 @@ body {
   position: relative;
   border: 1px solid white;
   width: 25rem;
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 1rem auto;
   text-align: left;
   padding: 0.8rem 1.7rem;
 }
@@ -58,8 +56,7 @@ h5 {
 }
 
 .weather {
-  margin: 10px 0;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .weather p {
@@ -67,19 +64,24 @@ h5 {
 }
 
 .temp {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.error-title {
+  font-size: 1.4rem;
+  margin-top: 2rem;
 }
 
 input[type="text"] {
   border: 1px solid rgba(252, 252, 252, 0.4);
   background-color: rgba(252, 252, 252, 0.2);
-  width: 250px;
+  width: 16rem;
   border-radius: 3px;
   font-family: "Source Sans Pro", sans-serif;
-  padding: 10px 15px;
-  margin: 0 auto 10px auto;
+  padding: 0.8rem 1.2rem;
+  margin: 0 auto 0.8rem auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.5rem;
   color: white;
   font-weight: 300;
 }
@@ -89,11 +91,10 @@ input[type="submit"] {
   outline: 0;
   background-color: white;
   border: 0;
-  padding: 10px 15px;
+  padding: 0.7rem 1rem;
   color: #50a3a2;
   border-radius: 3px;
-  width: 150px;
-  font-size: 18px;
-  margin-left: 10px;
+  width: 10rem;
+  font-size: 1.5rem;
+  margin-left: 0.8rem;
 }
-
